@@ -1,0 +1,26 @@
+name: IG Publisher
+
+on: push
+
+jobs:
+  build-sushi:
+    name: Run SUSHI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: npm install -g fsh-sushi
+      - run: sushi . -o build
+  run-publisher:
+    name: Run IG Publisher
+    needs: build-sushi
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - run: cd build
+      - run: ./_updatePublisher.sh -f
+      - run: ./_genonce.sh
