@@ -1,0 +1,314 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 55, errors = 1, warn = 4, info = 0 -->
+<head>
+  <title>FSHTestIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for FSHTestIG</h1>
+ <p>Generated Thu Apr 16 14:01:44 UTC 2020, FHIR version 4.0.1 for sushi-test#0.1.0 (canonical = <a href="http://hl7.org/fhir/sushi-test">http://hl7.org/fhir/sushi-test</a> (<a href="http://hl7.org/fhir/sushi-test/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.80-SNAPSHOT</p>
+<p>No Suppressed Errors</p>
+ <p>HL7 Publication check:</p> <ul>
+  <li>All ok (path - http://hl7.org/fhir/sushi-test)</li>
+</ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>49</b></td><td><b>6</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_ImplementationGuide-sushi-test"><b>/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/ImplementationGuide-sushi-test</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_examples_patient-MyPatient"><b>/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/examples/patient-MyPatient</b></a></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_extensions_structuredefinition-sample-complex-extension"><b>/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/extensions/structuredefinition-sample-complex-extension</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_extensions_structuredefinition-sample-value-extension"><b>/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/extensions/structuredefinition-sample-value-extension</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_profiles_structuredefinition-no-diff-prof"><b>/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/profiles/structuredefinition-no-diff-prof</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_profiles_structuredefinition-sample-observation"><b>/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/profiles/structuredefinition-sample-observation</b></a></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_profiles_structuredefinition-sample-patient"><b>/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/profiles/structuredefinition-sample-patient</b></a></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/no-diff-prof.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sample-observation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sample-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sample-complex-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/sample-value-extension.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/MyPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-MyPatient.html#0577feff-c42e-4f18-a4ff-fd39d4b8d93b">Patient-MyPatient.html#/html/body/div/div/div/p/a at Line 151, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-MyPatient.json.html#71c7ba73-e434-4a59-a762-551a782e64de">Patient-MyPatient.json.html#/html/body/div/div/div/p/a at Line 156, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-MyPatient.ttl.html#1b463022-1998-4cc7-8fe6-02ab5add7355">Patient-MyPatient.ttl.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-MyPatient.xml.html#bb21e926-323c-4a8d-8dd8-0285f98db2be">Patient-MyPatient.xml.html#/html/body/div/div/div/p/a at Line 151, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof-definitions.html#60a5e4bf-9030-4b8c-9cb3-e397b5110564">StructureDefinition-no-diff-prof-definitions.html#/html/body/div/div/div/p/a at Line 658, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof-examples.html#e6eb0eab-3570-4b14-9b4b-510d70202f83">StructureDefinition-no-diff-prof-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 188, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof-mappings.html#64792bb2-e296-4f72-87ef-63acd7e9f77b">StructureDefinition-no-diff-prof-mappings.html#/html/body/div/div/div/p/a at Line 296, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof.html#cc94a4db-acaa-4ae0-ba9e-f54fcd26fa9f">StructureDefinition-no-diff-prof.html#/html/body/div/div/div/p/a at Line 623, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof.json.html#5881503b-424d-4348-9315-e4d30f565ada">StructureDefinition-no-diff-prof.json.html#/html/body/div/div/div/p/a at Line 2360, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof.profile.json.html#06b0910b-8cc6-42c8-8a8e-3508fa8b9040">StructureDefinition-no-diff-prof.profile.json.html#/html/body/div/div/div/p/a at Line 2409, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof.profile.ttl.html#8786cddf-5425-4bed-a9d1-c456dd343cee">StructureDefinition-no-diff-prof.profile.ttl.html#/html/body/div/div/div/p/a at Line 2118, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof.profile.xml.html#dccfa996-fa8c-49eb-ab37-93f4eebb74fe">StructureDefinition-no-diff-prof.profile.xml.html#/html/body/div/div/div/p/a at Line 2208, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof.ttl.html#5c9e7842-7c71-455f-a613-e59401ea379c">StructureDefinition-no-diff-prof.ttl.html#/html/body/div/div/div/p/a at Line 2068, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-no-diff-prof.xml.html#efa11d50-fbf7-481c-9b6a-c72ee98bedbb">StructureDefinition-no-diff-prof.xml.html#/html/body/div/div/div/p/a at Line 2155, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-complex-extension-definitions.html#a43a1867-8443-4017-a3e9-ace6a18cd86e">StructureDefinition-sample-complex-extension-definitions.html#/html/body/div/div/div/p/a at Line 224, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-complex-extension-mappings.html#c3e9a1cb-440c-4255-812e-9fcce45897e9">StructureDefinition-sample-complex-extension-mappings.html#/html/body/div/div/div/p/a at Line 187, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-complex-extension.html#afbe65ca-75a3-4b22-b68b-1117b5800216">StructureDefinition-sample-complex-extension.html#/html/body/div/div/div/p/a at Line 413, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-complex-extension.profile.json.html#2887c732-22d8-4370-9fa7-5c523bbb7f1a">StructureDefinition-sample-complex-extension.profile.json.html#/html/body/div/div/div/p/a at Line 596, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-complex-extension.profile.ttl.html#56dd6fb1-0e32-4cf4-a0a0-3dad4c91697d">StructureDefinition-sample-complex-extension.profile.ttl.html#/html/body/div/div/div/p/a at Line 524, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-complex-extension.profile.xml.html#c2cbdc5e-f90f-4cf2-b429-5c2a78cb6d6c">StructureDefinition-sample-complex-extension.profile.xml.html#/html/body/div/div/div/p/a at Line 554, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation-definitions.html#cdb76572-4c4e-4870-8a64-52fafc783595">StructureDefinition-sample-observation-definitions.html#/html/body/div/div/div/p/a at Line 707, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation-examples.html#6fb4a939-d4ca-4bd0-9525-416cd148c1c2">StructureDefinition-sample-observation-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 188, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation-mappings.html#55b64486-d17f-4fe7-b363-b9a0f71ea05a">StructureDefinition-sample-observation-mappings.html#/html/body/div/div/div/p/a at Line 317, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation.html#39a2a9c3-220e-48ab-ac6a-61de9d34bde8">StructureDefinition-sample-observation.html#/html/body/div/div/div/p/a at Line 631, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation.json.html#41e2e2a9-69cb-43c7-a68d-18200551f294">StructureDefinition-sample-observation.json.html#/html/body/div/div/div/p/a at Line 2840, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation.profile.json.html#48f8de8d-48e7-42f8-9f10-f3e86bf6fb46">StructureDefinition-sample-observation.profile.json.html#/html/body/div/div/div/p/a at Line 2889, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation.profile.ttl.html#0a07f9be-1228-416b-acb5-d655998eb357">StructureDefinition-sample-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 2574, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation.profile.xml.html#7f9e3af8-ccdc-4512-8403-09e2a8d740a4">StructureDefinition-sample-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 2652, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation.ttl.html#8a3ab7d7-3430-41fd-b5d8-f0e35e1969de">StructureDefinition-sample-observation.ttl.html#/html/body/div/div/div/p/a at Line 2524, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-observation.xml.html#61597597-6c64-4570-9737-bfb571ce1916">StructureDefinition-sample-observation.xml.html#/html/body/div/div/div/p/a at Line 2599, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient-definitions.html#c8832834-a1c5-48c0-a646-acc438b84b2d">StructureDefinition-sample-patient-definitions.html#/html/body/div/div/div/p/a at Line 659, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient-examples.html#9b1fa908-e4b3-4e9b-9ddb-43d22e55570f">StructureDefinition-sample-patient-examples.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient-mappings.html#975daaaa-328b-47dd-bc8e-19b0298dca4e">StructureDefinition-sample-patient-mappings.html#/html/body/div/div/div/p/a at Line 296, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient.html#052b3129-bfe0-41d9-a525-4725496df281">StructureDefinition-sample-patient.html#/html/body/div/div/div/p/a at Line 625, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient.json.html#a1615220-c7df-4ede-a273-b0cbd94c7256">StructureDefinition-sample-patient.json.html#/html/body/div/div/div/p/a at Line 2365, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient.profile.json.html#dab02325-0e6d-465f-beba-59833052ce9a">StructureDefinition-sample-patient.profile.json.html#/html/body/div/div/div/p/a at Line 2414, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient.profile.ttl.html#dc4f5076-a148-4b11-81da-115a5da259e2">StructureDefinition-sample-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2120, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient.profile.xml.html#62eca080-c3b7-40e0-869b-3b3c0ba03158">StructureDefinition-sample-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2210, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient.ttl.html#9374f612-4cc7-4948-89ad-843451e86e2d">StructureDefinition-sample-patient.ttl.html#/html/body/div/div/div/p/a at Line 2070, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-patient.xml.html#a7e5818b-2ed4-4b62-ad8d-74d62387376c">StructureDefinition-sample-patient.xml.html#/html/body/div/div/div/p/a at Line 2157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-value-extension-definitions.html#361bd807-9527-44f9-ba80-298d49c27904">StructureDefinition-sample-value-extension-definitions.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-value-extension-mappings.html#a31c0364-0191-4ba9-97e1-f3b1aaf4977d">StructureDefinition-sample-value-extension-mappings.html#/html/body/div/div/div/p/a at Line 187, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-value-extension.html#fac1e8ae-d890-4182-97f4-ac51a83b8fa9">StructureDefinition-sample-value-extension.html#/html/body/div/div/div/p/a at Line 613, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-value-extension.profile.json.html#97f48aa9-613e-47ff-bdac-e770ee5c6812">StructureDefinition-sample-value-extension.profile.json.html#/html/body/div/div/div/p/a at Line 585, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-value-extension.profile.ttl.html#04e3ff97-dc42-4c13-b05b-8bbed54c5c4c">StructureDefinition-sample-value-extension.profile.ttl.html#/html/body/div/div/div/p/a at Line 514, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sample-value-extension.profile.xml.html#6cbfb188-991c-41ef-a5dc-ebbdadd26391">StructureDefinition-sample-value-extension.profile.xml.html#/html/body/div/div/div/p/a at Line 545, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#a29c0194-94dd-4aa9-921e-b2ed05191f01">artifacts.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#351ba8a2-83a0-49a9-99e9-d6112d445555">index.html#/html/body/div/div/div/p/a at Line 134, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#78ba3ddc-c5cf-4524-af9c-2e6d4e4afb7e">toc.html#/html/body/div/div/div/p/a at Line 125, column 28</a></b></td><td><b>error</b></td><td><b>The link 'cod@reef.gov' for &quot;James Tuna&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_ImplementationGuide-sushi-test"> </a>
+<h2><a href="ImplementationGuide-sushi-test.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/ImplementationGuide-sushi-test.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_examples_patient-MyPatient"> </a>
+<h2><a href="Patient-MyPatient.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/examples/Patient-MyPatient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_extensions_structuredefinition-sample-complex-extension"> </a>
+<h2><a href="StructureDefinition-sample-complex-extension.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/extensions/StructureDefinition-sample-complex-extension.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://hl7.org/fhir/sushi-test/StructureDefinition/sample-complex-extension</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_extensions_structuredefinition-sample-value-extension"> </a>
+<h2><a href="StructureDefinition-sample-value-extension.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/extensions/StructureDefinition-sample-value-extension.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://hl7.org/fhir/sushi-test/StructureDefinition/sample-value-extension</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_profiles_structuredefinition-no-diff-prof"> </a>
+<h2><a href="StructureDefinition-no-diff-prof.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/profiles/StructureDefinition-no-diff-prof.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://hl7.org/fhir/sushi-test/StructureDefinition/no-diff-prof</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_profiles_structuredefinition-sample-observation"> </a>
+<h2><a href="StructureDefinition-sample-observation.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/profiles/StructureDefinition-sample-observation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>http://hl7.org/fhir/sushi-test/StructureDefinition/sample-observation</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_runner_runners_2.169.0_work_simple-fsh-tank_simple-fsh-tank_build_input_profiles_structuredefinition-sample-patient"> </a>
+<h2><a href="StructureDefinition-sample-patient.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/profiles/StructureDefinition-sample-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/sample-patient: StructureDefinition.text</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/Narrative, Element 'StructureDefinition.text.status': minimum required = 1, but only found 0</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Error Messages</b></p>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-sample-patient.html">/Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/profiles/StructureDefinition-sample-patient.json</a></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/Narrative, Element 'StructureDefinition.text.status': minimum required = 1, but only found 0</b></td>
+   </tr>
+</table>
+</body>
+</html>
