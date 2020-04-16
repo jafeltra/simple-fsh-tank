@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "SampleValueExtension"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-16T14:01:20+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-04-16T19:31:43+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "James Tuna"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
