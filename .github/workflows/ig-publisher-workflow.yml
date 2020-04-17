@@ -11,16 +11,55 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - run: npm install -g fsh-sushi
+      - run: npm install -g fsh-sushi@0.12.1
       - run: sushi . -o build
+      - name: Upload SUSHI build result
+        uses: actions/upload-artifact@v1
+        with:
+          name: build
+          path: build
   run-publisher:
     name: Run IG Publisher
     needs: build-sushi
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - run: cd build
-      - run: ./_updatePublisher.sh -f
-      - run: ./_genonce.sh
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - name: Download SUSHI build artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: build
+      - name: Download and run publisher
+        run: |
+          gem install bundler jekyll
+          cd build
+          chmod 755 _updatePublisher.sh
+          chmod 755 _genonce.sh
+          ./_updatePublisher.sh -f
+          ./_genonce.sh
+      - name: Upload IG Output
+        uses: actions/upload-artifact@v1
+        with:
+          name: ig-output
+          path: build/output
+  publish-ig:
+    name: Publish IG
+    needs: run-publisher
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download IG output artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: ig-output
+      - name: Publish IG output to github pages
+        uses: peaceiris/actions-gh-pages@v3.5.7
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ig-output
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
