@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="MyPatient"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/sushi-test/StructureDefinition/sample-patient"/>
+  </meta>
+  <text>
+    <status value="empty"/><div xmlns="http://www.w3.org/1999/xhtml">Dr Multi<ul><li>item 1</li><li>item 2</li></ul></div>
+  </text>
+  <name>
+    <family value="Jones"/>
+    <given value="Fred"/>
+  </name>
+</Patient>
