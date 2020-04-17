@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "FSHTestIG"];
   fhir:ImplementationGuide.title [ fhir:value "FSH Test IG"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-17T19:41:26+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-17T19:56:17+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "James Tuna"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
