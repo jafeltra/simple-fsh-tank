@@ -3,7 +3,7 @@
 
 err = 2, warn = 8, info = 0
 IG Publisher Version: v1.0.80-SNAPSHOT
-Generated Thu Apr 16 20:56:06 UTC 2020. FHIR version 4.0.1 for sushi-test#0.1.0 (canonical = http://hl7.org/fhir/sushi-test)
+Generated Fri Apr 17 12:22:18 UTC 2020. FHIR version 4.0.1 for sushi-test#0.1.0 (canonical = http://hl7.org/fhir/sushi-test)
 
  Build Errors : 49 / 6
  /Users/runner/runners/2.169.0/work/simple-fsh-tank/simple-fsh-tank/build/input/ImplementationGuide-sushi-test : 0 / 0
