@@ -1,0 +1,29 @@
+name: IG Publisher
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-sushi-ig:
+    name: Run SUSHI, build IG, publish IG to GH Pages
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+      - name: Install SUSHI
+        uses: ig-publisher-workflow.yml
+      - name: Publish IG output to github pages
+        uses: peaceiris/actions-gh-pages@v3.5.7
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build/output
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

@@ -27,11 +27,27 @@ jobs:
           chmod 755 _genonce.sh
           ./_updatePublisher.sh -f
           ./_genonce.sh
-      - name: Publish IG output to github pages
-        uses: peaceiris/actions-gh-pages@v3.5.7
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/output
-          publish_branch: gh-pages
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+      # ---------------------
+      # Trying to move this portion out to master workflow
+      # - name: Publish IG output to github pages
+      #   uses: peaceiris/actions-gh-pages@v3.5.7
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: build/output
+      #     publish_branch: gh-pages
+      #     user_name: 'github-actions[bot]'
+      #     user_email: 'github-actions[bot]@users.noreply.github.com'
+      # -----------------------
+      # Problem below: Won't push and will fail if not changes to that directory
+      # - name: Publish IG output to folder on github pages
+      #   env:
+      #     branch: $GITHUB_REF##*/
+      #   run: |
+      #     git fetch origin gh-pages
+      #     git checkout gh-pages
+      #     mkdir -p ${GITHUB_REF##*/}
+      #     cd ${GITHUB_REF##*/}
+      #     cp -R ../build/input/profiles/* ./
+      #     git add .
+      #     git commit -m "Publish build for branch ${GITHUB_REF##*/}"
+      #     git push origin gh-pages
