@@ -1,9 +1,6 @@
 name: IG Publisher
 
-on:
-  push:
-    branches:
-      - separate-gh-pages-pub
+on: push
 
 jobs:
   gh-pages-publish:
