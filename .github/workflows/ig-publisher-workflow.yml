@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build-sushi-ig:
-    name: Run SUSHI, build IG, publish IG to GH Pages
+    name: Run SUSHI, build IG
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
